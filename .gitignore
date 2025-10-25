@@ -1,23 +1,20 @@
-﻿# ── credenciais / variáveis ─────────────────────────
+﻿# Ignorar arquivos sensíveis e temporários
 .env
-*.env
-*.env.local
-
-# ── Python ──────────────────────────────────────────
+.env.*
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.venv/
-venv/
-venv311/
-pip-wheel-metadata/
-
-# ── cache do app ────────────────────────────────────
-cache/
-
-# ── IDE/SO ──────────────────────────────────────────
+*.db
+*.sqlite3
+.DS_Store
 .vscode/
 .idea/
-.DS_Store
-Thumbs.db
+.venv*/
+venv*/
+# Logs e caches
+*.log
+*.tmp
+__pycache__/
+# Render e Git
+render.yaml~

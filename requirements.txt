@@ -10,3 +10,4 @@ numpy==1.26.4
 rapidfuzz==3.9.6
 pydantic==2.7.4
 supabase==2.5.0
+gunicorn==21.2.0
