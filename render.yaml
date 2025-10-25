@@ -1,0 +1,28 @@
+﻿services:
+  - type: web
+    name: bytedata-backend
+    runtime: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: PORT
+        value: "8080"
+      - key: DEBUG
+        value: "1"
+      - key: CONTEXT
+        value: "pagina_fluxo"
+      - key: DEMO_MODE
+        value: "False"
+      - key: HTTP_TIMEOUT
+        value: "40"
+      - key: SUPABASE_TABLE_FILTERS
+        value: "bytedata_filters"
+      # Essas três você vai preencher manualmente no painel do Render:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false

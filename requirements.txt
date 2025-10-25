@@ -1,0 +1,12 @@
+﻿flask==3.0.3
+flask-cors==4.0.1
+python-dotenv==1.0.1
+requests==2.32.3
+google-generativeai==0.8.2
+pytrends==4.9.2
+shapely==2.0.5
+h3==3.7.7
+numpy==1.26.4
+rapidfuzz==3.9.6
+pydantic==2.7.4
+supabase==2.5.0
